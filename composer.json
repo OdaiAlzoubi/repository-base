@@ -1,0 +1,21 @@
+{
+    "name": "soft/repository-base",
+    "description": "Provides a clean and reusable base repository implementation for Laravel applications using the Repository Pattern.",
+    "type": "library",
+    "require": {
+        "illuminate/database": "^10.0|^11.0|^12.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Soft\\RepositoryBase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Odai Alzoubi",
+            "email": "odaialzoubi391@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
