@@ -2,7 +2,7 @@
 
 namespace Soft\RepositoryBase\Interface;
 
-interface BaseRepositoryInterface
+interface RepositoryBaseInterface
 {
     public function all();
 

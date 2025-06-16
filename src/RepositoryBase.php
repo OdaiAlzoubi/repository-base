@@ -3,9 +3,9 @@
 namespace Soft\RepositoryBase;
 
 use Illuminate\Database\Eloquent\Model;
-use Soft\RepositoryBase\Interface\BaseRepositoryInterface;
+use Soft\RepositoryBase\Interface\RepositoryBaseInterface;
 
-class RepositoryBase implements BaseRepositoryInterface
+class RepositoryBase implements RepositoryBaseInterface
 {
     protected $model;
 
