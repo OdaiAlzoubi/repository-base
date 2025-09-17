@@ -23,4 +23,6 @@ interface RepositoryBaseInterface
     public function orderBy(string $column, string $direction = 'asc');
 
     public function exists(array $criteria);
+
+    public function getModel();
 }

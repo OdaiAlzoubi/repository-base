@@ -13,7 +13,7 @@ class RepositoryBase implements RepositoryBaseInterface
     {
         $this->model = $model;
     }
-    
+
     public function all()
     {
         return $this->model->all();
@@ -70,5 +70,10 @@ class RepositoryBase implements RepositoryBaseInterface
         }
 
         return $query->exists();
+    }
+
+    public function getModel()
+    {
+        return $this->model;
     }
 }
