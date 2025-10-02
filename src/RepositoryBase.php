@@ -46,7 +46,7 @@ class RepositoryBase implements RepositoryBaseInterface
         return $this->model->where($data)->get();
     }
 
-    public function paginate($perPage = 15)
+    public function paginate($perPage = 10)
     {
         return $this->model->paginate($perPage);
     }
@@ -75,5 +75,15 @@ class RepositoryBase implements RepositoryBaseInterface
     public function getModel()
     {
         return $this->model;
+    }
+
+    public function get()
+    {
+        return $this->model->get();
+    }
+
+    public function query()
+    {
+        return $this->model->query();
     }
 }

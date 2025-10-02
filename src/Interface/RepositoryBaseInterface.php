@@ -16,7 +16,7 @@ interface RepositoryBaseInterface
 
     public function findBy(array $data);
 
-    public function paginate($perPage = 15);
+    public function paginate($perPage = 10);
 
     public function with(array $relations);
 
@@ -25,4 +25,8 @@ interface RepositoryBaseInterface
     public function exists(array $criteria);
 
     public function getModel();
+
+    public function get();
+
+    public function query();
 }
